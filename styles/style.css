@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MB';
+}
+body{
+    background: #151515;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header__nav,.footer{
+    background: #282828;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.header__nav-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0px;
+}
+.header__nav-left,
+.header__nav-right{
+    display: flex;
+    align-items: center;
+}
+.header__nav-left{
+    gap: 30px;
+}
+.header__nav-right{
+    gap: 25px;
+}
+.header__nav-list,.footer__list{
+    display: flex;
+    gap: 30px;
+}
+.header__nav-link,.footer__link{
+    color: #FFF;
+    font-size: 20px;
+}
+.header__content{
+    background: url(../images/header-bg.jpg) no-repeat center /cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.header__content-title{
+    color: #FFF;
+    font-family: 'PR';
+    font-size: 100px;
+    line-height: 75px;
+}
+.header__content-link{
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    color: #171718;
+    font-family: "MM";
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 15px;
+}
+.footer__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+.footer__rightside{
+    display: flex;
+    gap: 30px;
+}
+.comfort__box{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: #FFF;
+    font-family: "MM";
+    font-size: 22px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.battery__box{
+    display: flex;
+    align-items: center;
+    gap: 85px;
+}
+.battery__box-text{
+    color: #FFF;
+    font-family: "MM";
+    font-size: 22px;
+}
+.design__box{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.design__box-img-div{
+    display: flex;
+    align-items: center;
+}
+.battery{
+    margin: 30px 0;
+}
+.design__box-img{
+    margin: 0 14px;
+}
+.design__box-img-div::before{
+    content: '';
+    display: block;
+    width: 61px;
+    height: 1px;
+    background: #C4C4C4;
+}
+.design__box-img-div::after{
+    content: '';
+    display: block;
+    width: 61px;
+    height: 1px;
+    background: #C4C4C4;
+}
+.design__box-text-left{
+    color: #FFF;
+    text-align: right;
+    font-size: 20px;
+}
+.design__box-text-left{
+    color: #FFF;
+    text-align: right;
+    font-size: 20px;
+}
+.design__box-text-right{
+    color: #FFF;
+    text-align: left;
+    font-size: 20px;
+}
+.design{
+    margin-bottom: 80px; 
+}
+.iphone{
+    margin-bottom: 55px;
+}
+.iphone__list{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.iphone__item{
+    background: #fff;
+    border-radius: 6px;
+    text-align: center;
+    padding: 15px 47px;
+}
+.iphone__item-img{
+    margin: 10px 0;
+}
+.iphone__item-title{
+    color: #000;
+    font-size: 20px;
+}
+.iphone__item-p{
+    color: #000;
+    font-family: "MR";
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.iphone__item-link{
+    background: #151515;
+    padding: 7px 57px;
+    color: #FFF;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+@media (max-width:900px) {
+    .battery__box{
+        gap: 20px;
+    }
+    .comfort__box-img{
+        width: 400px;
+    }
+    .battery__box-img{
+        width: 350px;
+    }
+    .design__box-img{
+        width: 200px;
+    }
+    .main p{
+        font-size: 18px;
+    }
+}
+@media (max-width:700px){
+    .design p{
+        text-align: center;
+    }
+    .design__box-img{
+        width: 180px;
+        margin: 0 5px;
+    }
+    .design__box{
+        gap: 10px;
+    }
+    .header__content-title{
+        font-size: 80px;
+    }
+}
+@media (max-width:600px) {
+    .footer__box{
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 20px;
+    }
+    .header__content-title{
+        font-size: 60px;
+    }
+    .design__box-img{
+        width: 130px;
+    }
+    .design__box-img-div::before{
+        width: 30px;
+    }
+    .design__box-img-div::after{
+        width: 30px;
+    }
+    .design__box-text-left,
+    .design__box-text-right{
+        width: 170px;
+    }
+    .comfort__box-img{
+        width: 300px;
+    }
+    .battery__box-img{
+        width: 250px;
+    }
+}
+@media (max-width:550px) {
+    .design__box p,
+    .comfort__box p{
+        font-size: 14px;
+    }
+}
+@media (max-width:456px) {
+    .main p{
+        font-size: 12px;
+    }
+    .comfort__box-img{
+        width: 230px;
+    }
+    .battery__box-img{
+        width: 180px;
+    }
+    .design__box-img{
+        width: 100px;
+    }
+    .header__content-title{
+        font-size: 45px;
+    }
+    .header__nav-box{
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    .header__nav-left{
+        flex-direction: column;
+        gap: 13px;
+    }
+    .header__content{
+        height: 400px;
+    }
+}
+@media (max-width:400px) {
+    .comfort__box-img{
+        width: 180px;
+    }
+    .design__box-img-div::before{
+        width: 20px;
+    }
+    .design__box-img-div::after{
+        width: 20px;
+    }
+    .design__box-img{
+        width: 80px;
+    }
+    .design__box-text-left,
+    .design__box-text-right{
+        width: 200px;
+    }
+    .design__box{
+        gap: 5px;
+    }
+    .design__box p,.comfort__box p{
+        font-size: 10px;
+    }
+}
+@media (max-width:320px) {
+    .comfort__box-img{
+        width: 150px;
+    }
+    .battery__box-img{
+        width: 150px;
+    }
+}
